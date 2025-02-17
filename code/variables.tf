@@ -1,6 +1,7 @@
 variable "naam" {
   description = "Naam van de persoon om resource namen te genereren."
   type        = string
+  default     = "jouwnaam"
 
   validation {
     condition     = can(regex("^[a-z0-9]+$", var.naam))

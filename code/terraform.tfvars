@@ -1,1 +1,1 @@
-naam = "Arne Van Looveren"
+naam = "jouwnaam"
