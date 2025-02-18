@@ -1,4 +1,4 @@
-# Terraform Basics Sessie
+# Terraform Basics
 ## Wat is Infrastructure as Code?
 
 ## Wat is Terraform?
