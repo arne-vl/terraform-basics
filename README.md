@@ -1,4 +1,4 @@
-# Terraform Basics Sessie
+# Terraform Basics
 ## Wat is Infrastructure as Code?
 IaC geeft je de mogelijkheid om infrastructuur te beheren met configuratiebestanden, in plaats van een grafische interface.
 
