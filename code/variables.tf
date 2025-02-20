@@ -8,3 +8,9 @@ variable "naam" {
     error_message = "De naam moet in kleine letters zijn en mag geen streepjes of spaties bevatten."
   }
 }
+
+variable "locatie" {
+  description = "De locatie waar de resources gedeployed moeten worden."
+  type        = string
+  default     = "West Europe"
+}

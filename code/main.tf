@@ -1,12 +1,12 @@
 resource "azurerm_resource_group" "rg" {
   name     = "rg-${var.naam}-terraform-basics"
-  location = "West Europe"
+  location = var.locatie
 }
 
 resource "azurerm_storage_account" "storage" {
   name                     = "st${var.naam}terraformbasics"
   resource_group_name      = azurerm_resource_group.rg.name
-  location                 = azurerm_resource_group.rg.location
+  location                 = var.locatie
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
