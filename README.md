@@ -46,7 +46,10 @@ Worden gebruikt om waarden door te geven aan andere configuraties of om belangri
 Modules zijn groepering en van meerdere resources die samen gebruikt kunnen worden (bv. Een storage account met “bronze”, “silver” en “gold” blob containers). Ze helpen je om je configuraties te organiseren, herbruikbare componenten te maken en best practices te implementeren. Een module bestaat uit een verzameling .tf-bestanden in een directory. Je kunt modules lokaal maken of modules gebruiken die zijn gepubliceerd in de Terraform Registry / GitHub.
 
 ## Hands-on: Terraform & Azure
-De code in deze repository maakt een Azure resource group, een storage account met LRS-replicatie, en een privé blobcontainer aan, waarbij de namen dynamisch worden gegenereerd met de variabele {var.naam}.
+De code in deze repository maakt een Azure resource group, een storage account met LRS-replicatie, en een privé blobcontainer aan.
+Owner tag wordt ingevuld met de variabele `volledige_naam`.
+Namen worden dynamisch gegenereerd met de variabele `naam`.
+Locatie wordt bepaald met de variabele `locatie`.
 
 1. `terraform init`
    - Initialiseer de werkmap en download de benodigde providers en modules.

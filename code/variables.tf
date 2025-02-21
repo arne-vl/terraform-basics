@@ -1,12 +1,16 @@
+variable "subscription_id" {
+  description = "De ID van de Azure subscription waar de resources gedeployed moeten worden."
+  type        = string
+}
+
+variable "volledige_naam" {
+  description = "De volledige naam van de persoon die de resources aanmaakt, vult de 'owner' tag in."
+  type        = string
+}
+
 variable "naam" {
   description = "Naam van de persoon om resource namen te genereren."
   type        = string
-  default     = "jouwnaam"
-
-  validation {
-    condition     = can(regex("^[a-z0-9]+$", var.naam))
-    error_message = "De naam moet in kleine letters zijn en mag geen streepjes of spaties bevatten."
-  }
 }
 
 variable "locatie" {

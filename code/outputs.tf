@@ -1,4 +1,4 @@
-output "storage_account_naam" {
-  description = "De naam van het aangemaakte storage account."
-  value       = azurerm_storage_account.storage.name
+output "resource_group_naam" {
+  description = "De naam van de aangemaakte resource groep."
+  value       = azurerm_resource_group.rg.name
 }
